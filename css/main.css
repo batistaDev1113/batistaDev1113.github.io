@@ -1,0 +1,129 @@
+body, html{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  font-family: 'Playfair Display', serif;
+}
+
+#header-row{
+  border-bottom: 3px solid #E88E19;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+nav.navbar{
+  justify-content: flex-start;
+}
+
+#footer-row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.card-body{
+  height: 210px;
+}
+
+button.navbar-toggler{
+  outline: none;
+}
+
+#header-pic.row{
+  margin-bottom: 90px;
+}
+
+#footer-row{
+  border-top: 3px solid #E88E19
+}
+
+img#header-pic{
+  max-height: 200px;
+}
+#logo{
+  padding-left: 0;
+}
+
+p.h5.justify{
+  line-height: 2.5rem;
+}
+
+img.rounded-circle{
+  max-height: 180px;
+}
+
+#featured-work{
+  margin-bottom: 50px;
+}
+
+.contact-section{
+  background-color: ghostwhite;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+/*.fab:hover{
+  color: #E78200;
+  transition: all 3ms;
+}*/
+
+.fa-linkedin-in:hover{
+  color: #E88E19;
+}
+
+.fa-codepen:hover{
+  color: #E88E19;
+}
+
+.fa-github:hover{
+  color: #E88E19;
+}
+
+.img-fluid.rounded-circle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.h5.justify{
+  padding-left: 0 !important;
+}
+
+a.btn.btn-outline-primary:focus{
+  outline: thin;
+}
+/* media queries go here */
+
+@media screen and (max-width: 576px){
+  div#header-row{
+   display: flex;
+    align-items: center;
+  }
+
+  h2.float-right.text-muted{
+    font-size: 0.98rem;
+  }
+
+  .navbar-brand{
+    /*visibility: hidden;*/
+    font-size: 1rem;
+  }
+
+  h5.text-muted{
+    margin-left: 0;
+  }
+
+  div.col{
+    padding-left: 0;
+  }
+
+  #about-me{
+    width: 150px !important;
+  }
+
+  nav.navbar{
+    display: block;
+    margin-left: auto;
+  }
+}
