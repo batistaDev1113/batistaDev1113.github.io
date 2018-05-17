@@ -1,65 +1,63 @@
-body,
-html {
+body, html{
   margin: 0;
   padding: 0;
+
 }
 
-body {
+body{
   font-family: 'Playfair Display', serif;
 }
 
-#header-row {
+#header-row{
   border-bottom: 3px solid #E88E19;
   margin-left: 0;
   margin-right: 0;
 }
 
-nav.navbar {
+nav.navbar{
   justify-content: flex-start;
 }
 
-#footer-row {
+#footer-row{
   margin-left: 0;
   margin-right: 0;
 }
-
-.card-body {
+.card-body{
   height: 210px;
 }
 
-button.navbar-toggler {
+button.navbar-toggler{
   outline: none;
 }
 
-#header-pic.row {
+#header-pic.row{
   margin-bottom: 90px;
 }
 
-#footer-row {
-  border-top: 3px solid #E88E19;
+#footer-row{
+  border-top: 3px solid #E88E19
 }
 
-#header-pic {
+img#header-pic{
   max-height: 200px;
 }
-
-#logo {
+#logo{
   padding-left: 0;
 }
 
-p.h5.justify {
+p.h5.justify{
   line-height: 2.5rem;
 }
 
-img.rounded-circle {
+img.rounded-circle{
   max-height: 180px;
 }
 
-#featured-work {
+#featured-work{
   margin-bottom: 50px;
 }
 
-.contact-section {
+.contact-section{
   background-color: ghostwhite;
   margin-bottom: 50px;
   padding-bottom: 50px;
@@ -70,56 +68,61 @@ img.rounded-circle {
   transition: all 3ms;
 }*/
 
-.fa-linkedin-in:hover {
+.fa-linkedin-in:hover{
   color: #E88E19;
 }
 
-.fa-codepen:hover {
+.fa-codepen:hover{
   color: #E88E19;
 }
 
-.fa-github:hover {
+.fa-github:hover{
   color: #E88E19;
 }
 
-.img-fluid.rounded-circle {
+.img-fluid.rounded-circle{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-p.h5.justify {
+p.h5.justify{
   padding-left: 0 !important;
 }
 
-a.btn.btn-outline-primary:focus {
+a.btn.btn-outline-primary:focus{
   outline: thin;
 }
-
 /* media queries go here */
 
-@media screen and (max-width: 576px) {
-  #header-row {
-    display: flex;
+@media screen and (max-width: 576px){
+  div#header-row{
+   display: flex;
     align-items: center;
   }
-  h2.float-right.text-muted {
+
+  h2.float-right.text-muted{
     font-size: 0.98rem;
   }
-  .navbar-brand {
+
+  .navbar-brand{
     /*visibility: hidden;*/
     font-size: 1rem;
   }
-  h5.text-muted {
+
+  h5.text-muted{
     margin-left: 0;
   }
-  .col {
+
+  div.col{
     padding-left: 0;
   }
-  #about-me {
+
+  #about-me{
     width: 150px !important;
   }
-  nav.navbar {
+
+  nav.navbar{
     display: block;
     margin-left: auto;
   }
