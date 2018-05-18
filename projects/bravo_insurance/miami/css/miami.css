@@ -1,0 +1,354 @@
+
+/* Miami office */
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body, html{
+	/* padding-top: 55px; */	
+	height: 100%;
+	margin: 0;
+	/* background-image: url("https://cdn.pixabay.com/photo/2017/01/24/10/58/sand-2005066_960_720.jpg"); */
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+#miami-office{
+	/* background-image: url("../img/miami-back.jpg"); */
+	background-image: url(https://www.miamism.com/sites/miamism.com/files/uploads/development/1951309/elysee-miami.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+#map{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.row{
+	justify-content: center;
+}
+
+div.card{
+	margin-bottom: 35px;
+}
+
+
+#staff-header{
+	margin-top: 40px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-style: italic;
+	font-weight: bolder;
+	color: #fff;
+}
+
+#staff-header h2{
+	width: 100%;
+    font-size: 1.5rem;
+}
+
+.no-cap{
+	text-transform: none;
+}
+
+
+/* #domingo{
+	margin-left: auto;
+	margin-right: auto;
+} */
+.new-card{
+	border: 1px solid red;
+	min-width: 30%;
+	min-height: 200px;
+}
+
+.new-card img{
+	width: 100%;
+}
+
+div.card.card-down{
+	margin-top: 150px;
+}
+
+.first-row{
+	margin-top: 10px;
+}
+
+.card img{
+	max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card img:hover{
+	-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+span#miami{
+	color: #007bff;
+	font-weight: bolder;
+	font-size: 3.2rem;
+}
+
+.card-img-top {
+    width: auto;
+    height: 30vh;
+ }
+ .card-body{
+ 	font-style: italic;
+ 	font-weight: bolder;
+ 	color: #7A7A7AFF;
+ }
+
+ #header-row{
+ 	margin-top: 115px;
+ 	font-family: 'Indie Flower', cursive;
+ 	padding: 10px;
+  	opacity: 0.4;
+  	height: fit-content;
+ 	
+ }
+
+ .card h4{
+	color: #000000;
+	font-style: italic;
+ 	font-weight: 550;
+ 	line-height: 2rem;
+
+ }
+
+ iframe{
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	margin-top: 20px;
+ }
+
+ #second-row{
+ 	margin-top: 65px;
+ }
+
+ #row-map{
+ 	background-color: #fff;
+}
+
+
+
+/* footer section */
+
+ul{
+	list-style-type: none;
+}
+
+.col-lg-8.col-md-4.col-sm-6 p, h3, .fa-twitter, .fa-facebook{
+	color: #fff;
+	position: relative;
+}
+
+.fa-twitter{
+	margin-right: 10px;
+	float: left;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	justify-content: space-between;
+}
+ 
+i.fa.fa-twitter:hover{
+	color: #007bff;
+}
+
+.fa-facebook:hover{
+	color: #007bff;
+}
+
+
+
+.fa-facebook{
+	margin-right: 10px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	float: left;
+	width: 48px;
+	height: 48px;
+	display: flex; 
+	justify-content: space-between;
+}
+
+.fa-linkedin{
+	margin-right: 10px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	float: left;
+	width: 48px;
+	height: 48px;
+	display: flex;
+	color: #fff;
+	justify-content: space-between;
+}
+
+.fa-linkedin:hover{
+	color: #007bff;
+}
+
+#social{
+	text-align: center;
+	display: inline;
+}
+
+.fa-twitter.fa-lg, .fa-facebook.fa-lg, .fa-linkedin.fa-lg{
+	line-height: inherit;
+}
+#footer-nav{
+	height: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+} 
+
+.footer-row{
+	margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#social h3{
+	margin-top: 20px;
+	color: #fff;
+	text-decoration: underline;
+} 
+
+ #footer-text{
+	font-size: 1.1rem;
+	margin-top: 25px;
+	color: #fff;
+}
+
+h3#follow-social, fa-facebook.fa-lg, fa-twitter.fa-lg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h3#follow-social{
+	font-size: 0.8em;
+    margin-top: 7px;
+    /* margin-right: 90px; */
+    /* text-align: center; */
+    justify-content: center;
+    width: 50%;
+}
+ 
+ .social-icons{
+ 	width: auto;
+ 	margin: auto;
+ 	justify-content: space-between;
+ }
+
+ #row-map h3, h5, p {
+	margin-top: 20px;
+	display: flex;
+	color: darkslategray;
+}
+
+div.container-fluid{
+	overflow-x: hidden;
+}
+
+div.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+div#second-row.row, div#row-map.row{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+div#second-row.row{
+	border-bottom: 1px solid lightgray;
+}
+
+div#row-map.row{
+	margin-top: 40px;
+}
+
+.first-row.col-lg-3.col-md-6.col-sm-12{
+	margin-top: 45px;
+	display: inline-block;
+	left: 0;
+	position: absolute;
+}
+
+.card{
+	border: none;
+}
+
+#row-map h3{
+	background-color: #343a40;
+	padding: 5px 0;
+	color: #fff;
+	padding: 15px 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.row.col-lg-3.col-md-6.col-sm-12{
+	text-indent: 20px;
+}
+
+
+/* media queries*/
+@media (max-width: 768px){
+.col-md-9{
+	min-width: 100%;
+	}
+
+	div#domingo.card{
+		position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+	}
+
+	div#miami-office.row{
+		background-position: bottom;
+	}
+	div#staff-header.text-center{
+	position: absolute;
+	left: 50%;
+	width: 100%;
+	}
+} 
+
+div#miami-temp{
+	position: absolute;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 40px;
+}
+
+@media(max-width: 425px) {
+	div#miami-office.row{
+		background-position: top;
+	}
+	div#domingo.card{
+		position: absolute;
+    position: absolute;
+    top: 70%;
+    margin-left: 20px;
+	}
+
+	div#staff-header.text-center{
+		left: 0;
+		margin-top: 20px;
+	}
+}
