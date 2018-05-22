@@ -59,12 +59,13 @@ img.rounded-circle {
   margin-bottom: 50px;
 }
 
-.social-media{
+.social-media {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
 }
+
 .contact-section {
   background-color: ghostwhite;
   margin-bottom: 50px;
@@ -97,6 +98,10 @@ a.btn.btn-outline-primary:focus {
   outline: thin;
 }
 
+.top a:hover {
+  color: #E88E19;
+}
+
 /* media queries go here */
 
 @media screen and (max-width: 576px) {
@@ -123,5 +128,8 @@ a.btn.btn-outline-primary:focus {
   nav.navbar {
     display: block;
     margin-left: auto;
+  }
+  .social-media {
+    flex-flow: row;
   }
 }
