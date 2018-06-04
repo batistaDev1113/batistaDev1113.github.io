@@ -1,0 +1,25 @@
+{
+  "name": "batistadev113.github.io",
+  "version": "1.0.0",
+  "description": "this is my portfolio website created while working on Udacity Front End Nanodegree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batistaDev1113/batistaDev113.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Yunior Batista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batistaDev1113/batistaDev113.github.io/issues"
+  },
+  "homepage": "https://github.com/batistaDev1113/batistaDev113.github.io#readme",
+  "dependencies": {
+    "grunt": "^1.0.2"
+  }
+}
