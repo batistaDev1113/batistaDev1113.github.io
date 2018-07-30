@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="keyboard.css">
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <title>Keyobard Tester</title>
+</head>
+
+<body>
+  <div class="container">
+    <img id="keyboard-pic" src="keyboard.png" alt="keyboard pic">
+    <h1 id="keyDisplay"></h1>
+
+  </div>
+
+  <footer>
+    <p>Keyboard tester made by Yunior Batista. Feel free to copy/fork this on
+      <a href="#">
+        <i class="fab fa-github"></i>
+        <b> GitHub</b>
+      </a>
+    </p>
+  </footer>
+
+  <script type="text/javascript">
+    document.addEventListener("keydown", function (event) {
+      for (let i in event) {
+        if (event.which == 32) {
+          document.getElementById('keyDisplay').innerHTML = "You pressed key:  " + event.code + " with keycode " +
+            event.which;
+        } else
+          document.getElementById('keyDisplay').innerHTML = "You pressed key:  " + event.key + " with keycode " +
+          event.which;
+
+      }
+
+
+    });
+  </script>
+</body>
+
+</html>
