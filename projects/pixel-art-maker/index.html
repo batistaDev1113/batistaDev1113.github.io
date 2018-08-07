@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+    <section class="section1" id="section1">
+        <h2>Choose Grid Size</h2>
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:
+            <input type="number" id="inputWidth" name="width" min="" value="1">
+            <input type="submit" id="submit" onclick="this.disabled = true">
+            <input type="reset" id="reset" onclick="gridReset()">
+        </form>
+
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+    </section>
+
+    <section class="section2" id="section2">
+        <h2>
+            <i class="fas fa-paint-brush fa-2x"></i> Design Canvas</h2>
+        <table id="pixelCanvas"></table>
+    </section>
+
+
+    <script src="designs.js"></script>
+</body>
+
+</html>
