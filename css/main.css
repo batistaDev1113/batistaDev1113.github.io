@@ -102,6 +102,41 @@ a.btn.btn-outline-primary:focus {
   color: #E88E19;
 }
 
+.header-pic{
+  background: url(../img/header-pic.jpg) no-repeat -300px;
+  min-height: 450px;
+  padding: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0.8;
+  margin-top: 5px;
+  background-attachment: fixed;
+}
+
+.header-pic h1{
+  color: #fff;
+  
+  position: fixed;
+  text-align: center;
+}
+@font-face {
+  font-family: "TravelingTypewriter";
+  src: url("TravelingTypewriter.ttf") format(".ttf");
+}
+
+.typeContent{
+  display: flex;
+  font-family: TravelingTypewriter;
+  align-items: center;
+}
+
+.name{
+  margin-top: 15px;
+}
+
+div.col-12{
+  text-align: center;
+}
 /* media queries go here */
 
 @media screen and (max-width: 576px) {
@@ -131,5 +166,15 @@ a.btn.btn-outline-primary:focus {
   }
   .social-media {
     flex-flow: row;
+  }
+
+  .typeContent h1{
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .fixed-bottom{
+    visibility: hidden;
   }
 }

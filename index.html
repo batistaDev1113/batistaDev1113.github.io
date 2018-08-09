@@ -18,7 +18,7 @@
   <title>My Portfolio</title>
 </head>
 
-<body>
+<body onload="typeWriter()">
   <div class="container">
     <!-- Content here -->
     <div class="row mt-4" id="header-row">
@@ -28,7 +28,7 @@
         </a>
       </div>
       <div class="col">
-        <h2 class="float-right text-muted mb-0">YUNIOR BATISTA</h2>
+        <h2 class="float-right text-muted mb-0 name">YUNIOR BATISTA</h2>
       </div>
       <div class="col-lg-12">
         <p class="float-right text-muted mb-0">
@@ -61,9 +61,10 @@
     </div>
     <!-- end of first row-->
 
-    <div class="row" id="header-pic">
-      <div class="col-sm-12 justify-content-center">
-        <img class="img-fluid mt-4" src="img/another-header-min.jpg" alt="portfolio header">
+    <div class="row header-pic" id="header-pic">
+      <div class="typeContent col-sm-12 justify-content-center">
+        <!--<img class="img-fluid mt-4" src="img/another-header-min.jpg" alt="portfolio header"> -->
+        <h1 id="typeWriter"></h1>
       </div>
     </div>
     <!-- end of second row-->
@@ -71,7 +72,7 @@
     <div class="row mt-4 mb-5 justify-content-between">
       <div class="col-12">
         <h3 class="text-muted mx-auto" id="featured-work" style="width: 300px">
-          <i class="fas fa-arrow-left"></i> FEATURED WORK
+          <i class="fas fa-arrow-left"></i> PROJECTS
           <i class="fas fa-arrow-right"></i>
         </h3>
       </div>
@@ -225,6 +226,22 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    var i = 0;
+    var x = 0;
+    var txt = 'Hi there.  I am Yunior Batista, a Web developer...';
+    let secondText = 'Hard worker and fast learner';
+    var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+      if (i < txt.length) {
+       document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed); 
+      }
+    }
+  </script>
 
 </body>
 
