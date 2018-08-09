@@ -61,7 +61,7 @@
     </div>
     <!-- end of first row-->
 
-    <div class="row header-pic" id="header-pic">
+    <div class="row header-pic" id="header-pic" onload="setBorder()">
       <div class="typeContent col-sm-12 justify-content-center">
         <!--<img class="img-fluid mt-4" src="img/another-header-min.jpg" alt="portfolio header"> -->
         <h1 id="typeWriter"></h1>
@@ -228,19 +228,30 @@
     crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-    var i = 0;
-    var x = 0;
-    var txt = 'Hi there.  I am Yunior Batista, a Web developer...';
-    let secondText = 'Hard worker and fast learner';
-    var speed = 100; /* The speed/duration of the effect in milliseconds */
+    let i = 0;
+    const txt = 'Hi there.  I am Yunior Batista, a Web developer...   ';
+    const speed = 100; /* The speed/duration of the effect in milliseconds */
 
     function typeWriter() {
       if (i < txt.length) {
-       document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+        document.getElementById("typeWriter").innerHTML += txt.charAt(i);
         i++;
-        setTimeout(typeWriter, speed); 
+        setTimeout(typeWriter, speed);
       }
+
     }
+
+
+    //border at the end of typewriter
+    var flashInterval;
+    $(document).ready(function () {
+      flashInterval = setInterval(function () {
+        $('#typeWriter').toggleClass('border-right');
+      }, 500);
+    }, function () {
+      clearInterval(flashInterval);
+      $('#typeWriter').removeClass('border-right');
+    });
   </script>
 
 </body>

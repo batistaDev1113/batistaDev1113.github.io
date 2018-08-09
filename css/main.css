@@ -2,6 +2,8 @@ body,
 html {
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1000;
 }
 
 body {
@@ -136,6 +138,16 @@ a.btn.btn-outline-primary:focus {
 
 div.col-12{
   text-align: center;
+}
+
+.border-right{
+  border-right: 0.14rem solid #fff !important;
+  position: fixed;
+  z-index: 1;
+}
+
+#typeWriter{
+  padding-right: 15px;
 }
 /* media queries go here */
 
