@@ -104,7 +104,7 @@ a.btn.btn-outline-primary:focus {
   color: #E88E19;
 }
 
-.header-pic{
+.header-pic {
   background: url(../img/header-pic.jpg) no-repeat -300px;
   min-height: 450px;
   padding: 0;
@@ -115,40 +115,39 @@ a.btn.btn-outline-primary:focus {
   background-attachment: fixed;
 }
 
-.header-pic h1{
+.header-pic h1 {
   color: #fff;
-  
   position: fixed;
   text-align: center;
 }
+
 @font-face {
-  font-family: "TravelingTypewriter";
-  src: url("TravelingTypewriter.ttf") format(".ttf");
+  font-family: "1942";
+  src: url("1942.ttf") format("true type format");
 }
 
-.typeContent{
+.typeContent {
   display: flex;
-  font-family: TravelingTypewriter;
+  font-family: 1942;
   align-items: center;
 }
 
-.name{
+.name {
   margin-top: 15px;
 }
 
-div.col-12{
+div.col-12 {
   text-align: center;
 }
 
-.border-right{
-  border-right: 0.14rem solid #fff !important;
-  position: fixed;
-  z-index: 1;
+a:hover {
+  text-decoration: none;
 }
 
-#typeWriter{
-  padding-right: 15px;
+span.wrap {
+  color: #fff;
 }
+
 /* media queries go here */
 
 @media screen and (max-width: 576px) {
@@ -179,14 +178,13 @@ div.col-12{
   .social-media {
     flex-flow: row;
   }
-
-  .typeContent h1{
+  .typeContent h1 {
     font-size: 1.25rem;
   }
 }
 
-@media screen and (max-width: 1100px){
-  .fixed-bottom{
+@media screen and (max-width: 1100px) {
+  .fixed-bottom {
     visibility: hidden;
   }
 }
