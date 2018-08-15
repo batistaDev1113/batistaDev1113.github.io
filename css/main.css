@@ -108,6 +108,9 @@ a.btn.btn-outline-primary:focus {
   background: url(../img/header-pic.jpg) no-repeat -300px;
   min-height: 450px;
   padding: 0;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
   opacity: 0.8;
