@@ -106,6 +106,7 @@ a.btn.btn-outline-primary:focus {
 
 .header-pic {
   background: url(../img/header-pic.jpg) no-repeat -300px;
+  clip-path: polygon(50% 0%, 100% 0, 100% 77%, 0 100%, 0 0);
   min-height: 450px;
   padding: 0;
   -webkit-background-size: cover;
