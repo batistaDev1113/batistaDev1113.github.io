@@ -117,6 +117,8 @@ a.btn.btn-outline-primary:focus {
   opacity: 0.8;
   margin-top: 5px;
   background-attachment: fixed;
+  overflow-y: scroll;
+  max-width: 100%;
 }
 
 .header-pic h1 {
