@@ -118,6 +118,7 @@ a.btn.btn-outline-primary:focus {
   margin-top: 5px;
   background-attachment: scroll;
   margin-left: 0;
+  width: inherit;
 }
 
 .header-pic h1 {
