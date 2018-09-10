@@ -1,5 +1,5 @@
 //typewriter
-var TxtType = function(el, toRotate, period) {
+var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -9,7 +9,7 @@ var TxtType = function(el, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function() {
+TxtType.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -37,12 +37,12 @@ TxtType.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
 
-window.onload = function() {
+window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute("data-type");
@@ -57,3 +57,40 @@ window.onload = function() {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+// const projectEvent = document.querySelector('.projects');
+const cardOne = document.querySelector('.card1');
+const cardTwo = document.querySelector('.card2');
+const cardThree = document.querySelector('.card3');
+const cardFour = document.querySelector('.card4');
+const cardFive = document.querySelector('.card5');
+
+function scrollEvent() {
+  if (window.pageYOffset > 400) {
+    //card3
+    cardThree.classList.add('animated', 'slideInRight', 'delay-2s', 'slower');
+    cardThree.classList.remove('hide');
+    // card5
+    cardFive.classList.add('animated', 'slideInLeft', 'delay-5s', 'slower');
+    cardFive.classList.remove('hide');
+
+    setTimeout(function () {
+      // card2
+      cardTwo.classList.add('animated', 'slideInLeft', 'delay-2s', 'slower');
+      cardTwo.classList.remove('hide');
+    }, 1000);
+
+    setTimeout(function () {
+      // card1
+      cardOne.classList.add('animated', 'slideInLeft', 'delay-5s', 'slower');
+      cardOne.classList.remove('hide');
+      //card4
+      cardFour.classList.add('animated', 'slideInRight', 'delay-5s', 'slower');
+      cardFour.classList.remove('hide');
+
+    }, 2000);
+
+  }
+}
+
+window.onscroll = scrollEvent;

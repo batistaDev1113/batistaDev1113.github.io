@@ -29,12 +29,14 @@ nav.navbar {
   height: 210px;
 }
 
+
+
 button.navbar-toggler {
   outline: none;
 }
 
 #header-pic.row {
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 }
 
 #footer-row {
@@ -193,4 +195,8 @@ span.wrap {
   .fixed-bottom {
     visibility: hidden;
   }
+}
+
+.hide{
+  visibility: hidden;
 }
