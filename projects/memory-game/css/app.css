@@ -17,8 +17,8 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
-    font-family: 'Coda', cursive;
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */    
+    font-family: 'Gamja Flower', cursive;
 }
 
 .container {
@@ -28,10 +28,11 @@ body {
     flex-direction: column;
 }
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-}
+header h1 {
+    font-family: 'Gamja Flower', cursive;
+    font-weight: 500;
+    font-size: 2.5rem
+}  
 
 /*
  * Styles for the deck of cards
@@ -161,4 +162,32 @@ p.star{
 
 span#stars{
     display: inline-flex;
+}
+
+span.moves, span#moves1{
+    font-family: 'Gamja Flower', cursive;
+    font-size: 1.5rem;
+    margin-left: 7px;
+}
+
+
+.timer1{
+    font-size: 1.5rem;
+    font-family: 'Gamja Flower', cursive;
+}
+
+.score-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    min-width: 500px;
+}
+
+.restart > i {
+    margin-left: 30px;
+}
+
+audio#audio{
+    display: none;
 }

@@ -185,6 +185,7 @@ function starRemover() {
 function gameOver() {
     if (matchedCards.length === 16) {
         popModal();
+        play();
     }
 
 } // end of gameOver
@@ -211,9 +212,6 @@ function popModal() {
     myTimer.innerHTML = convertSeconds(secTimer);
     myStars.innerHTML = document.querySelector('.stars').innerHTML;
 
-
-
-
 }
 
 // close modal after button 'Close' click
@@ -222,3 +220,10 @@ btnModal.addEventListener('click', function () {
     myModal.classList.add('hide');
     window.location.reload();
 });
+
+//play audio after winning
+let audioPlay = new Audio("./sounds/fanfare.mp3");
+play = () => {
+    audioPlay.play();
+}
+

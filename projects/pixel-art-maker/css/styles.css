@@ -1,0 +1,129 @@
+body {
+    background: #5433FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.9;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+    font-family: 'Modern Antiqua', cursive;
+}
+
+
+h1 {
+    min-width: 100%;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 25px;
+}
+
+td {
+    background-color: aliceblue;
+    width: 25px;
+}
+
+input[type=number] {
+    font-family: 'Modern Antiqua', cursive;
+    text-align: center;
+    width: 4em;
+}
+
+.section1 {
+    max-width: 40%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.section2 {
+    width: 60%;
+}
+
+.section2 h2 {
+    margin-bottom: 30px;
+}
+
+.fa-paint-brush {
+    color: chartreuse;
+}
+
+input[type=reset] {
+    visibility: hidden;
+}
+
+input[type=submit],
+input[type=reset] {
+    padding: 5px 8px;
+    width: 5em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    font-family: 'Modern Antiqua', cursive;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 15px;
+    color: black;
+}
+
+input[type=submit]:hover{
+    background-color: #5B45FE;
+    color: #fff;
+}
+input[type=reset]:hover{
+    background-color: #5B45FE;
+    color: #fff;
+}
+
+
+input[type=number] {
+    padding: 5px 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+        align-content: center;
+        flex-flow: column;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+        margin-top: 10px;
+        min-width: 40px;
+    }
+}

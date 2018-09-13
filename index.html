@@ -1,246 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Boostrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>Yunior Batista Portfolio</title>
 
-  <title>My Portfolio</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.css" rel="stylesheet">
+
 </head>
 
-<body onload="typeWriter()">
-  <div class="container">
-    <!-- Content here -->
-    <div class="row mt-4" id="header-row">
-      <div class="col" id="logo">
-        <a href="#">
-          <img src="img/brand_logo-min.png" alt="brand logo">
-        </a>
-      </div>
-      <div class="col">
-        <h2 class="float-right text-muted mb-0 name animated fadeInLeft">YUNIOR BATISTA</h2>
-      </div>
-      <div class="col-lg-12">
-        <p class="float-right text-muted mb-0 animated fadeInLeft">
-          <i class="fas fa-user-ninja mr-2"></i>Front End Developer Ninja</p>
-      </div>
+<body id="page-top">
 
-      <!--dropdow navigation-->
-      <nav class="navbar navbar-light">
-        <a class="navbar-brand text-muted active" href="#">MENU</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#featured-work">FEATURED WORK
-                <span class="sr-only">(current)</span>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Yunior Batista</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading text-uppercase">Front-End Web Developer</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="resume/Yunior_Batista_Resume.pdf"
+          target="_blank">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">A little bit of my work</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/memory-game-thumbnail.PNG" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Memory Game</h4>
+            <p class="text-muted">HTML, CSS, Javascript</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/keyboard-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Keyboard Tester</h4>
+            <p class="text-muted">HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/pixel.PNG" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Pixel Art Maker</h4>
+            <p class="text-muted">HTML, CSS, Javascript</p>
+          </div>
+        </div>
+        <!-- <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Lines</h4>
+            <p class="text-muted">Branding</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Southwest</h4>
+            <p class="text-muted">Website Design</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Window</h4>
+            <p class="text-muted">Photography</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-12 text-center mb-5">
+            <h2 class="section-heading text-uppercase">About</h2>
+          </div>
+        </div>
+        <div class="row align-items-center main-content">
+          <div class="col-lg-12 content-about">
+              <img class="img-fluid rounded-circle" src="img/profile-pic-min.png" alt="">
+            <div class="p-5">
+              <h2 class="text-center">A little bit about myself</h2>
+              <p>Hi there, I am Yunior, a passionate Front End Developer. The web has always seemed very interesting to me, and while working on my Bachelors in Computer Science, I decided that I wanted to be a Web Developer.  Now, I am 100% dedicated to creating websites,  helping customers and learning up-to-date modern technologies.  When I am not in development mode, I enjoy watching movies with my family, go fishing or otherwise, I lay back and relax.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase mb-5">Contact me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" accept-charset="UTF-8" action="https://usebasin.com/f/9ccd77c8fa29"
+            method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
+                    data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
+                    data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required"
+                    data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required"
+                    data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Yunior Batista 2018</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/yunior-batista-profile/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-me">ABOUT ME</a>
+            <li class="list-inline-item">
+              <a href="https://github.com/batistaDev1113" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-me">CONTACT ME</a>
+            <li class="list-inline-item">
+              <a href="https://codepen.io/dashboard/" target="_blank">
+                <i class="fab fa-codepen"></i>
+              </a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-    <!-- end of first row-->
-
-    <div class="row header-pic" id="header-pic" onload="setBorder()">
-      <div class="typeContent col-sm-12 justify-content-center">
-        <!--<img class="img-fluid mt-4" src="img/another-header-min.jpg" alt="portfolio header"> -->
-        <!-- <h1 id="typeWriter"><span id="vl"></span></h1> -->
-        <h1>
-          <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Yunior.", "I Love Programming.", "I Love to Develop and be Creative.", "Web Development is my Passion."]'>
-            <span class="wrap"></span>
-          </a>
-        </h1>
       </div>
     </div>
-    <!-- end of second row-->
+  </footer>
 
-    <div class="row mt-4 mb-5 justify-content-between projects">
-      <div class="col-12">
-        <h3 class="text-muted mx-auto" id="featured-work" style="width: 300px">
-          <i class="fas fa-arrow-left animated slideInLeft delay-4s slower"></i> PROJECTS
-          <i class="fas fa-arrow-right animated slideInRight delay-4s slower"></i>
-        </h3>
-      </div>
-      <div class="mt-3 col-lg-4 col-md-6 col-sm-12 card1 hide">
-        <div class="card">
-          <img class="card-img-top img-fluid pixel-card" src="img/memory-game.PNG" alt="Pixel Art Maker">
-          <div class="card-body text-muted">
-            <h4 class="card-title">Memory Game</h4>
-            <p class="card-text">Project Developed for Udacity Front End Nanodegree</p>
-            <a href="projects/memory-game/index.html" target="_blank" class="btn btn-primary p-2">Visit me</a>
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
           </div>
         </div>
-      </div>
-      <div class="mt-3 col-lg-4 col-md-6 col-sm-12 card2 hide">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/keyboard-70506_1280.jpg" alt="keyboard picture">
-          <div class="card-body text-muted">
-            <h4 class="card-title">Keyboard Key Test</h4>
-            <p class="card-text">Touch any keystroke on your keyboard to learn it's keycode</p>
-            <a href="projects/keyboard-test/keyboard.html" target="_blank" class="btn btn-primary p-2">Visit me</a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-3 col-lg-4 col-md-6 col-sm-12 card3 hide">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/bravo-insurance-min.PNG" alt="Bravo Insurance">
-          <div class="card-body text-muted">
-            <h4 class="card-title">Bravo Insurance</h4>
-            <p class="card-text">Website created for Insurance Company located in Miami and Orlando area</p>
-            <a href="projects/bravo_insurance/index.html" target="_blank" class="btn btn-primary p-2">Visit me</a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-3 col-lg-4 col-md-6 col-sm-12 card4 hide">
-        <div class="card">
-          <img class="card-img-top img-fluid pixel-card" src="img/pixel-art.PNG" alt="Pixel Art Maker">
-          <div class="card-body text-muted">
-            <h4 class="card-title">Pixel Art Maker</h4>
-            <p class="card-text">Project Developed at Udacity with Google scholarship program</p>
-            <a href="projects/pixel-art-maker/index.html" target="_blank" class="btn btn-primary p-2">Visit me</a>
-          </div>
-        </div>
-      </div>
-      <div class="mt-3 col-lg-4 col-md-6 col-sm-12 card5 hide">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="img/steve_resized-min.jpg" alt="Tribute page to Steve Jobs">
-          <div class="card-body text-muted">
-            <h4 class="card-title">Steve Jobs</h4>
-            <p class="card-text">Tribute page created for honoring Apple co-founder and entrepeneur Steve Jobs</p>
-            <a href="https://yuniorbatista.me/projects/Steve-Jobs/tribute/tribute.html" target="_blank" class="btn btn-primary p-2">Visit me</a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase mb-5">Memory Game</h2>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/memory-game-thumbnail.PNG" alt="">
+                <p>This is a game built with Javascript, CSS and HTML</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+                <a href="projects/memory-game/index.html" class="btn btn-primary">See it live</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!--about me section-->
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
-        <h4 class="text-muted mx-auto h3 mb-4" style="width: 200px" id="about-me">ABOUT ME </h4>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-sm-8 mt-3">
-        <img class="img-fluid rounded-circle" src="img/profile-pic-min.png" alt="my picture">
-      </div>
-      <div class="col-lg-8 col-md-8 col-sm-12 resume-btn">
-        <p class="h5 justify p-3 text-muted">Hello, my name is Yunior Batista. I am a recent Computer Science Graduate at Florida State University. I am currently
-          doing a Front End Developer Nanodegree scholarship, thanks to Udacity and Google. My future plan is to become a
-          full stack web developer and create wonderful web applications. I enjoy my free time with my beautiful family watching
-          movies or going out. I like fishing, and working out whenever time allows.</p>
-
-        <a class="btn btn-outline-primary p-2 mb-5" href="resume/Yunior_Batista_Resume.pdf" target="_blank">RESUME</a>
-      </div>
-
-
-    </div>
-
-    <!-- contact me section here-->
-    <div class="row contact-section mb-5">
-
-      <div class="col-lg-12">
-        <p class="h4 mx-auto mt-5 text-muted mb-5" style="width: 200px" id="contact-me">CONTACT ME
-          <i class="far fa-hand-point-down"></i>
-        </p>
-      </div>
-
-      <!-- social media icons-->
-      <div class="col-lg-4 col-md-4 col-sm-12 social-media mb-5">
-        <h5 class="text-muted mb-3 ml-3">Social Media</h5>
-        <span>
-          <a href="https://github.com/yb13" target="_blank">
-            <i class="fab fa-github fa-2x ml-3"></i>
-          </a>
-        </span>
-        <span>
-          <a href="https://www.linkedin.com/in/yunior-batista-profile/" target="_blank">
-            <i class="fab fa-linkedin-in fa-2x ml-3"></i>
-          </a>
-        </span>
-        <span>
-          <a href="https://www.linkedin.com/in/yunior-batista-profile/" target="_blank">
-            <i class="fab fa-codepen fa-2x ml-3"></i>
-          </a>
-        </span>
-      </div>
-
-      <div class="col-lg-8 col-md-8 col-sm-12 ml-auto">
-        <h5 class="text-muted mb-3" style="width:300px">Fill out the form below</h5>
-        <form accept-charset="UTF-8" action="https://usebasin.com/f/9ccd77c8fa29" method="POST">
-          <div class="form-row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" required>
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" required>
-            </div>
-          </div>
-          <div class="form-row mt-4">
-            <div class="form-group col-lg-4">
-              <input type="text" id="text" name="text" class="form-control" placeholder="Phone number" required>
-            </div>
-            <div class="form-group col-lg-8">
-              <input id="email" type="email" name="email" class="form-control" placeholder="Email address" required>
-            </div>
-          </div>
-          <div class="form-row mt-4">
-            <div class="form-group col">
-              <textarea id="message" rows="3" name="message" class="form-control" placeholder="Write anything here"></textarea>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-
-
-    </div>
-    <!-- contact section ends here-->
-
-    <!-- back to top section -->
-    <div class="d-flex fixed-bottom justify-content-end p-2 fa-2x top">
-      <a href="#top">
-        <i class="fas fa-chevron-circle-up"></i>
-      </a>
-    </div>
-
-    <!-- footer section-->
-    <div class="row justify-content-center p-3 mb-3 mt-3" id="footer-row">
-      <p class="text-muted mx-auto" style="width: 250px;">
-        <i class="far fa-copyright"></i> Copyright Yunior Batista - 2018</p>
-    </div>
-
   </div>
-  <!-- container ends here-->
 
-  <!--javascript and jquery CDN-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-    crossorigin="anonymous"></script>
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Keyboard Tester</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/keyboard-thumbnail.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Explore</li>
+                  <li>Category: Graphic Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="./js/main.js"></script>
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/pixel-art-maker.PNG" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Finish</li>
+                  <li>Category: Identity</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Lines</li>
+                  <li>Category: Branding</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Southwest</li>
+                  <li>Category: Website Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
+                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Window</li>
+                  <li>Category: Photography</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
 
 </body>
 
