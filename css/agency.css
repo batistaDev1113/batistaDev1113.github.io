@@ -754,10 +754,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 
 @media (max-width: 576px) {
+  body{
+    overflow: hidden;
+  }
+
   header.masthead{
     background-attachment: scroll;
     background-position: center center;
-    overflow: hidden;
   }
   div.intro-heading.text-uppercase{
     font-size: 1.5rem;
