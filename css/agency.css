@@ -762,7 +762,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     background-attachment: scroll;
     background-position: center center;
   }
-  div.intro-heading.text-uppercase{
+  .intro-heading.text-uppercase{
     font-size: 1.5rem;
     padding-top: 50px;
   }
