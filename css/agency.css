@@ -229,6 +229,11 @@ header.masthead .intro-text .intro-heading.text-uppercase {
 @media (max-width: 576px) {
   header.masthead{
     background-attachment: scroll;
+    background-position: center;
+  }
+  .masthead.intro-heading{
+    font-size: 1.5rem;
+    padding-top: 50px;
   }
 }
   header.masthead .intro-text .intro-lead-in {
