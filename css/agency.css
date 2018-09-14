@@ -226,16 +226,6 @@ header.masthead .intro-text .intro-heading.text-uppercase {
     padding-bottom: 200px;
   }
 
-@media (max-width: 576px) {
-  header.masthead{
-    background-attachment: scroll;
-    background-position: center;
-  }
-  .masthead.intro-heading{
-    font-size: 1.5rem;
-    padding-top: 50px;
-  }
-}
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
@@ -760,4 +750,16 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+
+@media (max-width: 576px) {
+  header.masthead{
+    background-attachment: scroll;
+    background-position: center;
+  }
+  .masthead.intro-heading{
+    font-size: 1.5rem;
+    padding-top: 50px;
+  }
 }
