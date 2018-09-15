@@ -742,6 +742,17 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 @media only screen and (max-width: 768px){
   
 header.masthead .intro-text .intro-heading.text-uppercase{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
+
+  header.masthead{
+    background-size: 100% 100%; 
+  }
+}
+
+@media only screen and (max-width: 576px){
+  header.masthead .intro-text .intro-heading.text-uppercase{
+    font-size: 1.2rem;
+    margin-top: 50px;
+  } 
 }
