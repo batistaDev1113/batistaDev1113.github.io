@@ -747,6 +747,8 @@ header.masthead .intro-text .intro-heading.text-uppercase{
 
   header.masthead{
     background-size: 100% 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
