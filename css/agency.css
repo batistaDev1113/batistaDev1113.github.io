@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
-body {
+ body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
@@ -58,20 +58,7 @@ section h3.section-subheading {
   section {
     padding: 150px 0;
   }
-  header.masthead{
-    background-attachment: scroll;
-  }
 }
-
-@media (max-width: 767px){
-  header.masthead{
-    background-attachment: scroll;
-  }
-  header.masthead.intro-text{
-    font-size: 2rem;
-  }
-}
-
 
 .btn {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -225,7 +212,6 @@ header.masthead .intro-text .intro-heading.text-uppercase {
     padding-top: 300px;
     padding-bottom: 200px;
   }
-
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
@@ -750,20 +736,4 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
-}
-
-
-@media (max-width: 576px) {
-  body{
-    overflow: hidden;
-  }
-
-  header.masthead{
-    background-attachment: scroll;
-    background-position: center center;
-  }
-  .intro-heading.text-uppercase{
-    font-size: 1.5rem;
-    padding-top: 50px;
-  }
 }
