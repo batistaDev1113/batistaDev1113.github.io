@@ -738,6 +738,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background-color: #fed136;
 }
 
+section#about p{
+  line-height: 2.5;
+}
 
 @media only screen and (max-width: 768px){
   
