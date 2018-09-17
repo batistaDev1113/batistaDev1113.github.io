@@ -761,4 +761,8 @@ header.masthead .intro-text .intro-heading.text-uppercase{
     font-size: 1.2rem;
     margin-top: 50px;
   } 
+
+  section#about h2{
+    font-size: 1.2rem;
+  }
 }
