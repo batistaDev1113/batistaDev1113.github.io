@@ -1,6 +1,8 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    cssmin = require('clean-css');
+
 
 gulp.task('default', function(){
   gulp.src('js/all.js')
@@ -14,4 +16,9 @@ gulp.task('image', function(){
   gulp.src('img/*')
   .pipe(imagemin())
   .pipe(gulp.dest('imgmin'));
+});
+
+gulp.task('uglify', function(){
+  gulp.src('css/*.css')
+  .pipe()
 });

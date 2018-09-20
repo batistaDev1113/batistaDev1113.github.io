@@ -753,11 +753,6 @@ section#about p{
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 992px){
-  span#font-span{
-    font-size: 3.2rem;
-  }
-}
 @media only screen and (max-width: 768px){
   
 header.masthead .intro-text .intro-heading.text-uppercase{
@@ -771,8 +766,14 @@ header.masthead .intro-text .intro-heading.text-uppercase{
     background-repeat: no-repeat;
     background-position: center left;
   }
+
+  span#font-span{
+    font-size: 3.2rem;
+  }
 }
 
+
+/* iphone and other smartphones */
 @media only screen and (max-width: 576px){
   header.masthead .intro-text .intro-heading.text-uppercase{
     font-size: 1.2rem;
@@ -794,5 +795,31 @@ header.masthead .intro-text .intro-heading.text-uppercase{
 
   span#font-span{
     font-size: 1.4rem;
+  }
+}
+
+/* Ipad pro screen portrait */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  span#font-span{
+    font-size: 3.7rem;
+  }
+
+  header.masthead .intro-text .intro-heading.text-uppercase{
+    font-size: 3.1rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+/* ipad 2 */
+@media only screen and (min-width: 576px) and (max-width: 768px){
+  span#font-span{
+    font-size: 2.9rem;
+  }
+
+  header.masthead .intro-text .intro-heading.text-uppercase{
+    font-size: 2.5rem;
+   
+    margin-bottom: 100px;
   }
 }
