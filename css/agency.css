@@ -86,6 +86,10 @@ section h3.section-subheading {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.masthead a.btn.btn-primary{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
 ::-moz-selection {
   background: #fed136;
   text-shadow: none;
@@ -128,6 +132,11 @@ img::-moz-selection {
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+span#font-span{
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color:#fed136;
+  font-size: 5rem;
+}
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: #fec503;
 }
@@ -742,11 +751,17 @@ section#about p{
   line-height: 2.5;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  span#font-span{
+    font-size: 3.2rem;
+  }
+}
 @media only screen and (max-width: 768px){
   
 header.masthead .intro-text .intro-heading.text-uppercase{
     font-size: 2.5rem;
   }
+
 
   header.masthead{
     background-attachment: scroll;
@@ -773,5 +788,9 @@ header.masthead .intro-text .intro-heading.text-uppercase{
 
   div.p-5{
     padding: 15px!important;
+  }
+
+  span#font-span{
+    font-size: 1.8rem;
   }
 }
