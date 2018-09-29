@@ -14,3 +14,11 @@ Guide:
 3 - Moving up user should use arrow key with arrow pointing up;
 
 4 - Moving up user should use arrow key with arrow pointing down;
+
+5 - Moving left user should use arrow key with arrow pointing left;
+
+6 - Moving right user should use arrow key with arrow pointing right;
+
+7 - Whenever the player makes it to the top, an alert will display;
+
+Good luck playing!;
