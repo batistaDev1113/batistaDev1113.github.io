@@ -12,6 +12,8 @@ class Enemy{
         this.speed = speed;
         this.leftBound = 0;
         this.rightBound = 404;
+        this.height = 32;
+        this.width = 70;
        
     }
 
@@ -29,11 +31,15 @@ class Enemy{
             this.x += this.speed * dt;
         }
 
-        for(let enemy in allEnemies){
-            if(enemy.x === player.y){
+        //box collision test
+      if(this.x < player.x  + player.width &&
+            this.x + this.width > player.x &&
+            this.y < player.y + player.height &&
+            this.y + this.height > player.y){
+                    console.log('player touched');
+                //collision detected
                 player.resetPlayer();
             }
-        }
         
     }
 }
@@ -52,6 +58,8 @@ class Player{
         this.bottomBound = 404;
         this.leftBound = 0;
         this.rightBound = 404;
+        this.width = 5;
+        this.height = 15;
         
     }
 
@@ -65,7 +73,6 @@ class Player{
             case 'up':
             if(this.y !== this.topBound){
                 this.y = this.y - 83;
-            let position = this.y;
             }
             break;
             case 'down':
