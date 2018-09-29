@@ -12,8 +12,8 @@ class Enemy{
         this.speed = speed;
         this.leftBound = 0;
         this.rightBound = 404;
-        this.height = 32;
-        this.width = 70;
+        this.height = 80;
+        this.width = 55;
        
     }
 
@@ -38,7 +38,7 @@ class Enemy{
             this.y + this.height > player.y){
                     console.log('player touched');
                 //collision detected
-                player.resetPlayer();
+               player.resetPlayer();
             }
         
     }
@@ -58,9 +58,8 @@ class Player{
         this.bottomBound = 404;
         this.leftBound = 0;
         this.rightBound = 404;
-        this.width = 5;
-        this.height = 15;
-        
+        this.width = 85;
+        this.height = 80;
     }
 
     update() {
@@ -123,10 +122,10 @@ class Player{
 const player = new Player;
 
 // instantiate enemies
-const enemy1 = new Enemy('125', '230', 120),
-    enemy2 = new Enemy('101', '60', 100),
-    enemy3 = new Enemy('302', '140', 95),
-    enemy4 = new Enemy('383', '230', 150);
+const enemy1 = new Enemy(125, 230, 120),
+    enemy2 = new Enemy(101, 60, 100),
+    enemy3 = new Enemy(302, 140, 95),
+    enemy4 = new Enemy(383, 230, 150);
 
 const allEnemies = [enemy1, enemy2, enemy3, enemy4];
 
