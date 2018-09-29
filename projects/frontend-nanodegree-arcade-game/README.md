@@ -12,4 +12,5 @@ Guide:
 2 - Player should use arrow keys for moving the character on the board.![Alt text](./images/keyboard-arrows.jpg?raw=true "Arrow keys");
 
 3 - Moving up user should use arrow key with arrow pointing up;
+
 4 - Moving up user should use arrow key with arrow pointing down;
