@@ -751,7 +751,9 @@ section#about p{
   line-height: 2.5;
 }
 
-
+i.modals.fab.fa-github {
+  color: #383C42;
+}
 
 @media only screen and (max-width: 768px){
   

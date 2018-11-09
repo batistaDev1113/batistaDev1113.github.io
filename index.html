@@ -23,6 +23,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.ico">
 
 </head>
 
@@ -75,8 +77,36 @@
         </div>
       </div>
       <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/neighborhood-map.PNG" alt="maps of disney world's resorts in orlando, fl">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Neighborhood Map</h4>
+                <p class="text-muted">HTML, CSS, Javascript, React</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                  </div>
+                  <img class="img-fluid" src="img/my-reads.PNG" alt="picture of a bookshelf">
+                </a>
+                <div class="portfolio-caption">
+                  <h4>My Reads Bookshelf</h4>
+                  <p class="text-muted">HTML, CSS, Javascript, React</p>
+                </div>
+              </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -90,7 +120,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -104,7 +134,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -118,7 +148,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -132,7 +162,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -247,6 +277,67 @@
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase mb-5">Neighborhood Map</h2>
+                  <img class="img-fluid d-block mx-auto" src="img/neighborhood-map.PNG" alt="neighborhood map picture">
+                  <p>This application was built using React( a javascript library ), the Google maps API and a third party API like Fourthsquare in order to render images of the resorts.  Here the user can finder
+                      some locations for Disney World Resorts in the Orlando, FL area.  There is also a built in search bar menu for the user to input an specific resort name.  I hope you find what you are looking for!</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                  <a href="https://batistadev1113.github.io/neighborhood-map-react/" class="btn btn-primary">See it live</a>
+                  <a href="https://github.com/batistaDev1113/neighborhood-map-react" class="btn btn-primary"><i class="modals fab fa-github"></i> Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase mb-5">My Reads Bookshelf</h2>
+                  <img class="img-fluid d-block mx-auto" src="img/my-reads.PNG" alt="my reads bookslef picture">
+                  <p>My Reads is a project built using React ( a javascript library) where the user can search for books by entering an author's name, of simply the name of the book.  A list of books will be displayed and the reader will have options to select it as either read, currently reading or want to read.  It is reading time now!</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                  <a href="https://myreads-react-app.netlify.com/" class="btn btn-primary">See it live</a>
+                  <a href="https://github.com/batistaDev1113/myreads-udacity-react" class="btn btn-primary"><i class="modals fab fa-github"></i> Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -266,6 +357,7 @@
                   <i class="fas fa-times"></i>
                   Close Project</button>
                 <a href="projects/memory-game/index.html" class="btn btn-primary">See it live</a>
+                <a href="https://github.com/batistaDev1113/Front-End-Nanodegree---Udacity/tree/master/fend-project-memory-game-master" class="btn btn-primary"><i class="modals fab fa-github"></i> Github</a>
               </div>
             </div>
           </div>
@@ -274,8 +366,9 @@
     </div>
   </div>
 
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -295,6 +388,7 @@
                   <i class="fas fa-times"></i>
                   Close Project</button>
                   <a href="projects/keyboard-test/keyboard.html" class="btn btn-primary">See it live</a>
+                  <a href="https://github.com/batistaDev1113/batistaDev1113.github.io/tree/master/projects/keyboard-test" class="btn btn-primary"><i class="modals fab fa-github"></i> Github</a>
               </div>
             </div>
           </div>
@@ -303,8 +397,8 @@
     </div>
   </div>
 
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -324,6 +418,7 @@
                   <i class="fas fa-times"></i>
                   Close Project</button>
                   <a href="projects/pixel-art-maker/index.html" class="btn btn-primary">See it live</a>
+                  <a href="https://github.com/batistaDev1113/batistaDev1113.github.io/tree/master/projects/pixel-art-maker" class="btn btn-primary"><i class="modals fab fa-github"></i> Github</a>
               </div>
             </div>
           </div>
@@ -331,8 +426,8 @@
       </div>
     </div>
   </div>
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -352,6 +447,7 @@
                   <i class="fas fa-times"></i>
                   Close Project</button>
                 <a href="projects/mws-restaurant-stage-1/index.html" class="btn btn-primary">See it live</a>
+                <a href="https://github.com/batistaDev1113/Front-End-Nanodegree---Udacity/tree/master/mws-restaurant-stage-1" class="btn btn-primary"><i class="modals fab fa-github"></i> Github</a>
               </div>
             </div>
           </div>
@@ -359,8 +455,8 @@
       </div>
     </div>
   </div>
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -380,6 +476,7 @@
                     <i class="fas fa-times"></i>
                     Close Project</button>
                     <a href="projects/frontend-nanodegree-arcade-game/index.html" class="btn btn-primary">See it live</a>
+                    <a href="https://github.com/batistaDev1113/Front-End-Nanodegree---Udacity/tree/master/frontend-nanodegree-arcade-game" class="btn btn-primary"><i class="modals fab fa-github"></i> Github</a>
                 </div>
               </div>
             </div>
