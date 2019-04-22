@@ -83,6 +83,7 @@ document
   .getElementById('sendMessageButton')
   .addEventListener('click', validateForm);
 const btnSend = document.getElementById('sendMessageButton');
+btnSend.disabled = true;
 
 function validateName() {
   const name = document.getElementById('name');
