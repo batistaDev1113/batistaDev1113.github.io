@@ -1,104 +1,31 @@
-//import { builtinModules } from 'module';
 
-// $(function() {
-
-//   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
-//     preventSubmit: true,
-//     submitError: function($form, event, errors) {
-//       // additional error messages or events
-//     },
-//     submitSuccess: function($form, event) {
-//       event.preventDefault(); // prevent default submit behaviour
-//       // get values from FORM
-//       var name = $("input#name").val();
-//       var email = $("input#email").val();
-//       var phone = $("input#phone").val();
-//       var message = $("textarea#message").val();
-//       var firstName = name; // For Success/Failure Message
-//       // Check for white space in name for Success/Fail message
-//       if (firstName.indexOf(' ') >= 0) {
-//         firstName = name.split(' ').slice(0, -1).join(' ');
-//       }
-//       $this = $("#sendMessageButton");
-//       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
-//       $.ajax({
-//         url: "././mail/contact_me.php",
-//         type: "POST",
-//         data: {
-//           name: name,
-//           phone: phone,
-//           email: email,
-//           message: message
-//         },
-//         cache: false,
-//         success: function() {
-//           // Success message
-//           $('#success').html("<div class='alert alert-success'>");
-//           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-//             .append("</button>");
-//           $('#success > .alert-success')
-//             .append("<strong>Your message has been sent. </strong>");
-//           $('#success > .alert-success')
-//             .append('</div>');
-//           //clear all fields
-//           $('#contactForm').trigger("reset");
-//         },
-//         error: function() {
-//           // Fail message
-//           $('#success').html("<div class='alert alert-danger'>");
-//           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-//             .append("</button>");
-//           $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
-//           $('#success > .alert-danger').append('</div>');
-//           //clear all fields
-//           $('#contactForm').trigger("reset");
-//         },
-//         complete: function() {
-//           setTimeout(function() {
-//             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
-//           }, 1000);
-//         }
-//       });
-//     },
-//     filter: function() {
-//       return $(this).is(":visible");
-//     },
-//   });
-
-//   $("a[data-toggle=\"tab\"]").click(function(e) {
-//     e.preventDefault();
-//     $(this).tab("show");
-//   });
-// });
-
-// /*When clicking on Full hide fail/success boxes */
-// $('#name').focus(function() {
-//   $('#success').html('');
-// });
-
+// event listeners
 document.getElementById('name').addEventListener('blur', validateName);
 document.getElementById('email').addEventListener('blur', validateEmail);
 document.getElementById('phone').addEventListener('blur', validatePhone);
-document
-  .getElementById('sendMessageButton')
-  .addEventListener('click', validateForm);
-const btnSend = document.getElementById('sendMessageButton');
-btnSend.disabled = true;
+document.getElementById('message').addEventListener('blur', validateTextArea);
 
+// input variables
+const inputName = document.querySelector('input#name');
+const inputEmail = document.querySelector('input#email');
+const inputPhone = document.querySelector('input#phone');
+const inputText = document.querySelector('textarea#message');
+
+// validate name
+const name = document.getElementById('name');
 function validateName() {
-  const name = document.getElementById('name');
-  const re = /^[a-zA-Z]{2,10}$/;
+  const re = /^([a-zA-Z .]{2,15})\s([a-zA-Z]{2,20}) *$/;
 
   if (!re.test(name.value)) {
     name.classList.add('is-invalid');
   } else {
     name.classList.remove('is-invalid');
   }
-  validateForm(name);
 }
 
+// validate email
+const email = document.getElementById('email');
 function validateEmail() {
-  const email = document.getElementById('email');
   const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
   if (!re.test(email.value)) {
@@ -106,11 +33,11 @@ function validateEmail() {
   } else {
     email.classList.remove('is-invalid');
   }
-  validateForm(email);
 }
 
+// validate phone
+const phone = document.getElementById('phone');
 function validatePhone() {
-  const phone = document.getElementById('phone');
   const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
 
   if (!re.test(phone.value)) {
@@ -118,13 +45,29 @@ function validatePhone() {
   } else {
     phone.classList.remove('is-invalid');
   }
-  validateForm(phone);
 }
 
-function validateForm(el) {
-  if (el.classList.contains('is-invalid')) {
-    btnSend.disabled = true;
+// make sure message is not empty
+const text = document.getElementById('message');
+function validateTextArea() {
+  if (text.value == '') {
+    text.classList.add('is-invalid');
   } else {
-    btnSend.disabled = false;
+    text.classList.remove('is-invalid');
+  }
+}
+
+const btnSubmit = document.getElementById('sendMessageButton');
+const classCheck = document.body.getElementsByClassName('is-invalid');
+
+// check for empy input or 'is-invalid' error class
+function validateForm() {
+  if (classCheck.length >= 1 || inputName.value == '' || inputEmail.value == '' || inputPhone.value == '' || inputText.value == '') {
+    event.preventDefault();
+    validateName();
+    validateEmail();
+    validatePhone();
+    validateTextArea();
+
   }
 }
