@@ -83,21 +83,43 @@ section h3.section-subheading {
   border-color: #fed136;
 }
 
-.btn-primary:active,
+/* .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
   background-color: #fec810 !important;
   border-color: #fec810 !important;
   color: white;
   outline: none;
-}
+} */
 
-.btn-primary:active,
+/* .btn-primary:active,
 .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+} */
+
+.btn-primary:hover {
+  background-color: #fec810 !important;
+  transition: all 0.7s ease-in-out;
+  transform: scale(1.1) translate3d(0, -5px, 0);
 }
 
+a.btn.btn-primary:focus {
+  outline: 0 !important;
+}
+
+a.btn.btn-primary:active {
+  outline: none;
+  border: none;
+}
+button#sendMessageButton:focus {
+  outline: 0 !important;
+}
+
+button#sendMessageButton:active {
+  outline: none;
+  border: none;
+}
 .masthead a.btn.btn-primary,
 button#sendMessageButton {
   background-color: transparent;
