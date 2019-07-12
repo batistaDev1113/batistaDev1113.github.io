@@ -188,7 +188,7 @@ span#font-span {
 header.masthead {
   text-align: center;
   color: #fff;
-  background-image: url(../imgmin/web-design-background-min.jpg);
+  background-image: url(../portfolio-images/web-design-2906159_1920.jpg);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: cover;
@@ -616,7 +616,7 @@ header.masthead .intro-text .intro-heading.text-uppercase {
 }
 section#contact {
   background-color: #212529;
-  background-image: url(../img/map-image.png);
+  background-image: url(../portfolio-images/map-image.png);
   background-repeat: no-repeat;
   background-position: center;
 }
