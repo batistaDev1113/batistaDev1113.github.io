@@ -219,7 +219,12 @@ header.masthead .intro-text .intro-heading.text-uppercase {
     'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
 }
-@media (min-width: 768px) {
+
+img#svg {
+  margin-top: -194px;
+}
+
+@media (max-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
