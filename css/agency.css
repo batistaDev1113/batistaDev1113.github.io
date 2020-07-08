@@ -848,6 +848,9 @@ i.modals.fab.fa-github {
   bottom: -20%;
 }
 
+#wave-top-aboout {
+  margin-top: -85px;
+}
 @media (min-width: 768px) {
   #svg {
     bottom: -249px;
