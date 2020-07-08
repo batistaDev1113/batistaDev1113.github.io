@@ -240,6 +240,21 @@ img#svg {
   margin-bottom: -590px;
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  img#svg {
+    margin-top: 87px;
+  }
+
+  img#svg-upsideDown {
+    margin-bottom: -484px;
+  }
+}
+
+@media (max-width: 575px) {
+  img#svg {
+    margin-top: 16px;
+  }
+}
 @media (max-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
@@ -764,9 +779,9 @@ i.modals.fab.fa-github {
   section#about h2:nth-last-child(2) {
     font-size: 1.2rem;
   }
-  section#about {
-    max-width: 95%;
-    margin: auto;
+
+  #svg-upsideDown {
+    margin-bottom: -295px;
   }
   div.p-5 {
     padding: 15px !important;
@@ -784,6 +799,10 @@ i.modals.fab.fa-github {
     margin-top: 50px;
     margin-bottom: 100px;
   }
+
+  img#svg {
+    margin-top: 641px;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   span#font-span {
@@ -792,5 +811,31 @@ i.modals.fab.fa-github {
   header.masthead .intro-text .intro-heading.text-uppercase {
     font-size: 2.5rem;
     margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  img#svg {
+    margin-top: -173px;
+  }
+
+  .intro-text {
+    padding-top: 150px !important;
+  }
+
+  #svg-upsideDown {
+    margin-bottom: -290px;
+  }
+}
+
+@media (max-width: 376px) and (min-width: 321px) {
+  #svg {
+    margin-top: 25px !important;
+  }
+}
+
+@media (max-width: 415px) and (min-width: 377px) {
+  #svg {
+    margin-top: 83px !important;
   }
 }
