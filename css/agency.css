@@ -223,6 +223,19 @@ img#svg {
   margin-top: -7px;
 }
 
+/* prefix for mozilla browser only */
+@-moz-document url-prefix() {
+  img#svg {
+    margin-top: -120px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  img#svg {
+    margin-top: -114px;
+  }
+}
+
 #svg-upsideDown {
   margin-bottom: -590px;
 }
