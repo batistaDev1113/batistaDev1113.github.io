@@ -830,7 +830,7 @@ i.modals.fab.fa-github {
 
 @media (max-width: 376px) and (min-width: 321px) {
   #svg {
-    margin-top: 25px !important;
+    margin-top: 22px !important;
   }
 }
 
@@ -838,4 +838,11 @@ i.modals.fab.fa-github {
   #svg {
     margin-top: 95px !important;
   }
+}
+
+#svg {
+  position: absolute;
+  min-width: 100vw;
+  left: 0;
+  bottom: -6%;
 }
