@@ -844,5 +844,11 @@ i.modals.fab.fa-github {
   position: absolute;
   min-width: 100vw;
   left: 0;
-  bottom: -28%;
+  bottom: -20%;
+}
+
+@media (min-width: 768px) {
+  #svg {
+    bottom: -28px;
+  }
 }
