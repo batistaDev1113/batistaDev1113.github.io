@@ -1,4 +1,7 @@
-node_modules
+.DS_Store
+node_modules/
+logs/
+.vscode/
 
 #ignore these extensions
 *.map
