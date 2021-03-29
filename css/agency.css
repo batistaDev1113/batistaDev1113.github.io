@@ -790,6 +790,15 @@ i.modals.fab.fa-github {
   span#font-span {
     font-size: 1.4rem;
   }
+
+  .portfolio-modal .modal-content h2{
+    font-size: 1.5rem;
+  }
+
+  .portfolio-modal .modal-content .btn.btn-primary {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   span#font-span {
